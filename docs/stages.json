@@ -1,0 +1,72 @@
+[
+  {
+    "plan": "low_latent=(1, 24, 22, 16, 28) target_latent=(1, 24, 22, 30, 54) spatial_lift=(1.8750, 1.9286) low_nfe=3 high_nfe=1 sigma_prediction=0.92307693 sigma_resume=0.80000001 rho=0.0000 weights=(1.0000, 1.0000) direct_lift=external pixel_anchor=False cfg=1.0000 mask=none hires_model=same",
+    "stages": {
+      "low_resolution": 42.224,
+      "transition": 5.81,
+      "high_resolution": 11.688
+    },
+    "prompt_executed_s": 136.86
+  },
+  {
+    "plan": "low_latent=(1, 24, 22, 16, 28) target_latent=(1, 24, 22, 30, 54) spatial_lift=(1.8750, 1.9286) low_nfe=3 high_nfe=1 sigma_prediction=0.92307693 sigma_resume=0.80000001 rho=0.0000 weights=(1.0000, 1.0000) direct_lift=external pixel_anchor=False cfg=1.0000 mask=none hires_model=same",
+    "stages": {
+      "low_resolution": 35.099,
+      "transition": 4.206,
+      "high_resolution": 12.93
+    },
+    "prompt_executed_s": 130.28
+  },
+  {
+    "plan": "low_latent=(1, 24, 22, 16, 28) target_latent=(1, 24, 22, 30, 54) spatial_lift=(1.8750, 1.9286) low_nfe=3 high_nfe=1 sigma_prediction=0.92307693 sigma_resume=0.80000001 rho=0.0000 weights=(1.0000, 1.0000) direct_lift=external pixel_anchor=False cfg=1.0000 mask=none hires_model=same",
+    "stages": {
+      "low_resolution": 41.141
+    },
+    "prompt_executed_s": 77.15
+  },
+  {
+    "plan": "low_latent=(1, 24, 22, 16, 28) target_latent=(1, 24, 22, 30, 54) spatial_lift=(1.8750, 1.9286) low_nfe=2 high_nfe=2 sigma_prediction=0.97297299 sigma_resume=0.92307693 rho=0.0000 weights=(1.0000, 1.0000) direct_lift=external pixel_anchor=False cfg=1.0000 mask=none hires_model=same",
+    "stages": {
+      "low_resolution": 49.077,
+      "transition": 2.68,
+      "high_resolution": 28.344
+    },
+    "prompt_executed_s": 172.97
+  },
+  {
+    "plan": "low_latent=(1, 24, 22, 12, 22) target_latent=(1, 24, 22, 30, 54) spatial_lift=(2.5000, 2.4545) low_nfe=3 high_nfe=1 sigma_prediction=0.92307693 sigma_resume=0.80000001 rho=0.0000 weights=(1.0000, 1.0000) direct_lift=external pixel_anchor=False cfg=1.0000 mask=none hires_model=same",
+    "stages": {
+      "low_resolution": 35.917,
+      "transition": 6.202,
+      "high_resolution": 12.928
+    },
+    "prompt_executed_s": 134.91
+  },
+  {
+    "plan": "low_latent=(1, 24, 22, 16, 28) target_latent=(1, 24, 22, 30, 54) spatial_lift=(1.8750, 1.9286) low_nfe=3 high_nfe=1 sigma_prediction=0.92307693 sigma_resume=0.80000001 rho=0.0000 weights=(1.0000, 1.0000) direct_lift=external pixel_anchor=False cfg=1.0000 mask=none hires_model=same",
+    "stages": {
+      "low_resolution": 57.325,
+      "transition": 2.882,
+      "high_resolution": 15.644
+    },
+    "prompt_executed_s": 168.58
+  },
+  {
+    "plan": "low_latent=(1, 24, 22, 16, 28) target_latent=(1, 24, 22, 30, 54) spatial_lift=(1.8750, 1.9286) low_nfe=3 high_nfe=1 sigma_prediction=0.92307693 sigma_resume=0.80000001 rho=0.6000 weights=(1.0000, 1.0000) direct_lift=nearest pixel_anchor=True cfg=1.0000 mask=none hires_model=same",
+    "stages": {
+      "low_resolution": 38.633,
+      "transition": 63.528,
+      "high_resolution": 18.544
+    },
+    "prompt_executed_s": 200.18
+  },
+  {
+    "plan": "low_latent=(1, 24, 22, 16, 28) target_latent=(1, 24, 22, 30, 54) spatial_lift=(1.8750, 1.9286) low_nfe=6 high_nfe=2 sigma_prediction=0.87804878 sigma_resume=0.80000001 rho=0.0000 weights=(1.0000, 1.0000) direct_lift=external pixel_anchor=False cfg=1.0000 mask=none hires_model=same",
+    "stages": {
+      "low_resolution": 58.102,
+      "transition": 5.233,
+      "high_resolution": 25.587
+    },
+    "prompt_executed_s": 174.15
+  }
+]

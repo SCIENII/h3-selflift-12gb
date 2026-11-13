@@ -1,0 +1,1186 @@
+[START] Security scan
+[DONE] Security scan
+## ComfyUI-Manager: installing dependencies done.
+** ComfyUI startup time: 2026-11-14 00:18:35.159
+** Platform: Windows
+** Python version: 3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]
+** Python executable: E:\ComfyUIV9.5\ComfyUI-V9.5\python\python.exe
+** ComfyUI Path: E:\ComfyUIV9.5\ComfyUI-V9.5
+** ComfyUI Base Folder Path: E:\ComfyUIV9.5\ComfyUI-V9.5
+** User directory: E:\ComfyUIV9.5\ComfyUI-V9.5\user
+** ComfyUI-Manager config path: E:\ComfyUIV9.5\ComfyUI-V9.5\user\default\ComfyUI-Manager\config.ini
+** Log path: E:\ComfyUIV9.5\ComfyUI-V9.5\user\comfyui.log
+[32m[INFO][0m 
+Prestartup times for custom nodes:
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\rgthree-comfy
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-easy-use
+[32m[INFO][0m   21.4 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-manager
+[32m[INFO][0m 
+[32m[INFO][0m Found comfy_kitchen backend cuda: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'closest_hit_on_mesh', 'closest_point_on_mesh', 'connected_components', 'convrot_w4a4_linear', 'delaunay3d', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'edge_collapse_checks', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'group_norm_stats3d', 'int8_linear', 'mesh_bvh', 'min_cut', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear', 'w4a8_packed_linear', 'window_attention']}
+[32m[INFO][0m Found comfy_kitchen backend hip: {'available': False, 'disabled': False, 'unavailable_reason': 'PyTorch ROCm/HIP runtime not available', 'capabilities': []}
+[32m[INFO][0m Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_embedding', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_mxfp8', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'group_norm_stats3d', 'int8_linear', 'int8_linear_modulated', 'int8_linear_rms_modulated', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_gated_residual', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_mxfp8', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear', 'w4a8_packed_linear', 'window_attention']}
+[32m[INFO][0m Found comfy_kitchen backend ascend: {'available': False, 'disabled': False, 'unavailable_reason': "torch-npu is not installed: No module named 'torch_npu'", 'capabilities': []}
+[32m[INFO][0m Found comfy_kitchen backend triton: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'int8_linear', 'na3d', 'quantize_and_rotate_rowwise', 'quantize_int8_rowwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'w4a8_int8_linear']}
+[32m[INFO][0m Checkpoint files will always be loaded safely.
+[32m[INFO][0m Total VRAM 12288 MB, total RAM 32684 MB
+[32m[INFO][0m pytorch version: 2.9.1+cu130
+[32m[INFO][0m Set vram state to: NORMAL_VRAM
+[32m[INFO][0m Device: cuda:0 NVIDIA GeForce RTX 3060 Laptop GPU : cudaMallocAsync
+[32m[INFO][0m Using async weight offloading with 2 streams
+[32m[INFO][0m Enabled pinned memory 13073.0
+[32m[INFO][0m working around nvidia conv3d memory bug.
+[32m[INFO][0m Using sage attention
+[32m[INFO][0m aimdo: src-win/cuda-detour.c:38:INFO:aimdo_setup_hooks: installing 6 hooks
+[32m[INFO][0m aimdo: src/control.c:269:INFO:comfy-aimdo NVML pressure enabled
+[32m[INFO][0m aimdo: src-win/shmem-detect.c:76:INFO:comfy-aimdo DXCore adapter match: NVIDIA GeForce RTX 3060 Laptop GPU runtime_luid=00000000:0001707a
+[32m[INFO][0m aimdo: src-win/shmem-detect.c:112:INFO:comfy-aimdo WDDM adapter match: NVIDIA GeForce RTX 3060 Laptop GPU runtime_luid=00000000:0001707a dxgi_luid=00000000:0001707a
+[32m[INFO][0m aimdo: src/control.c:284:INFO:comfy-aimdo inited for GPU: NVIDIA GeForce RTX 3060 Laptop GPU (VRAM: 12287 MB)
+[32m[INFO][0m DynamicVRAM support detected and enabled
+[32m[INFO][0m Python version: 3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]
+[32m[INFO][0m ComfyUI version: 0.33.0
+[32m[INFO][0m comfy-aimdo version: 0.6.0
+[32m[INFO][0m comfy-kitchen version: 0.2.41
+[32m[INFO][0m comfy-kitchen version: 0.2.41
+[32m[INFO][0m comfy-aimdo version: 0.6.0
+[1m[33m[WARNING][0m ________________________________________________________________________
+WARNING WARNING WARNING WARNING WARNING
+
+Installed comfyui-frontend-package version 1.42.15 is lower than the recommended version 1.49.6.
+Installed comfyui-workflow-templates version 0.9.68 is lower than the recommended version 0.11.44.
+Installed comfyui-embedded-docs version 0.4.4 is lower than the recommended version 0.5.10.
+
+Please install the updated requirements.txt file by running:
+E:\ComfyUIV9.5\ComfyUI-V9.5\python\python.exe -m pip install -r E:\ComfyUIV9.5\ComfyUI-V9.5\requirements.txt
+If you are on the portable package you can run: update\update_comfyui.bat to solve this problem.
+________________________________________________________________________
+[32m[INFO][0m [Prompt Server] web root: E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\comfyui_frontend_package\static
+[32m[INFO][0m Asset seeder disabled
+[32m[INFO][0m No OpenGL_accelerate module loaded: Acceleration disabled
+Web extensions folder found at E:\ComfyUIV9.5\ComfyUI-V9.5\web\extensions\ComfyLiterals
+[H3One] H3 keyframe+ref payload repair: enabled (built-in merge)
+[Crystools [0;32mINFO[0m] Crystools version: 1.27.4
+[Crystools [0;32mINFO[0m] Platform release: 11
+[Crystools [0;32mINFO[0m] JETSON: Not detected.
+[Crystools [0;32mINFO[0m] CPU: Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz - Arch: AMD64 - OS: Windows 11
+[Crystools [0;32mINFO[0m] pynvml (NVIDIA) initialized.
+[Crystools [0;32mINFO[0m] GPU/s:
+[Crystools [0;32mINFO[0m] 0) NVIDIA GeForce RTX 3060 Laptop GPU
+[Crystools [0;32mINFO[0m] NVIDIA Driver: 610.62
+W1114 00:20:05.327000 26392 python\Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+[1m[33m[WARNING][0m Could not find the bitsandbytes CUDA binary at WindowsPath('E:/ComfyUIV9.5/ComfyUI-V9.5/python/Lib/site-packages/bitsandbytes/libbitsandbytes_cuda130.dll')
+[1m[33m[WARNING][0m The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+2026-11-14 00:20:14.162694: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[34m[ComfyUI-Easy-Use] server: [0mv1.3.6 [92mLoaded[0m
+[34m[ComfyUI-Easy-Use] web root: [0mE:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-easy-use\web_version/v2 [92mLoaded[0m
+[32m[INFO][0m ComfyUI-GGUF: Allowing full torch compile
+E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\cupy\_environment.py:217: UserWarning: CUDA path could not be detected. Set CUDA_PATH environment variable if CuPy fails to load.
+  warnings.warn(
+E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\timm\models\layers\__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\timm\models\registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\timm\models\helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+
+********
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+********
+ 
+'sox' �����ڲ����ⲿ���Ҳ���ǿ����еĳ���
+���������ļ���
+[1m[33m[WARNING][0m SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+[VideoCaptioner] Loading from: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner
+[VideoCaptioner] VideoCaptioner path exists: True
+[VideoCaptioner] Preloaded helper: base_node
+E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\ctranslate2\__init__.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[VideoCaptioner] Preloaded helper: faster_whisper_python
+[VideoCaptioner] Preloaded helper: model_downloader
+[VideoCaptioner] �始�入依赖...
+[VideoCaptioner] base_node 导入成功
+[VideoCaptioner] base_node setup:
+  Current dir: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner
+  VideoCaptioner path: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner
+  Path exists: True
+  Clearing conflicting modules...
+    Removing: app
+    Removing: app.logger
+    Removing: app.assets
+    Removing: app.assets.database
+    Removing: app.assets.helpers
+    Removing: app.database
+    Removing: app.database.models
+    Removing: app.assets.database.models
+    Removing: app.assets.database.queries.common
+    Removing: app.assets.database.queries.asset
+    Removing: app.assets.database.queries.asset_reference
+    Removing: app.assets.database.queries.tags
+    Removing: app.assets.database.queries
+    Removing: app.assets.services.cursor
+    Removing: app.assets.services.path_utils
+    Removing: app.assets.services.schemas
+    Removing: app.database.db
+    Removing: app.assets.services.asset_management
+    Removing: app.assets.services.bulk_ingest
+    Removing: app.assets.services.file_utils
+    Removing: app.assets.services.hashing
+    Removing: app.assets.services.image_dimensions
+    Removing: app.assets.services.ingest
+    Removing: app.assets.services.tagging
+    Removing: app.assets.services
+    Removing: app.assets.services.metadata_extract
+    Removing: app.assets.scanner
+    Removing: app.assets.seeder
+    Removing: app.frontend_management
+    Removing: app.assets.api
+    Removing: app.app_settings
+    Removing: app.user_manager
+    Removing: app.assets.api.schemas_in
+    Removing: app.assets.api.schemas_out
+    Removing: app.assets.api.upload
+    Removing: app.assets.api.routes
+    Removing: app.model_manager
+    Removing: app.custom_node_manager
+    Removing: app.subgraph_manager
+    Removing: app.node_replace_manager
+  Added to sys.path[0]: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner
+  app module location: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner\app\__init__.py
+  app.core imported successfully
+[VideoCaptioner] VideoCaptioner �径�置成功
+[VideoCaptioner] �选依赖未安�: demucs, retry
+[VideoCaptioner] All core dependencies check passed
+[VideoCaptioner] 依赖�查�过
+[VideoCaptioner] 导入 VideoCaptioner 核心模块...
+[VideoCaptioner] transcribe 导入成功
+[VideoCaptioner] ASRData 导入成功
+[VideoCaptioner] entities 导入成功
+[VideoCaptioner] 导入 FasterWhisper Python 实现...
+[VideoCaptioner] FasterWhisperPython 导入成功 (��: True)
+[VideoCaptioner] cleanup_resources 导入成功
+[VideoCaptioner] �有依赖�入成功�
+[VideoCaptioner] [OK] VideoTranscribe loaded
+[VideoCaptioner] base_node setup:
+  Current dir: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner
+  VideoCaptioner path: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner
+  Path exists: True
+  Clearing conflicting modules...
+    Removing: app
+    Removing: app.core
+    Removing: app.core.utils
+    Removing: app.config
+    Removing: app.core.utils.logger
+    Removing: app.core.bk_asr.asr_data
+    Removing: app.core.storage.constants
+    Removing: app.core.storage.models
+    Removing: app.core.storage.database
+    Removing: app.core.storage.cache_manager
+    Removing: app.core.storage
+    Removing: app.core.bk_asr.base
+    Removing: app.core.bk_asr.bcut
+    Removing: app.core.utils.subprocess_helper
+    Removing: app.core.bk_asr.faster_whisper
+    Removing: app.core.bk_asr.jianying
+    Removing: app.core.bk_asr.whisper_torch
+    Removing: app.core.entities
+    Removing: app.core.bk_asr.transcribe
+    Removing: app.core.bk_asr
+  Added to sys.path[0]: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner
+  app module location: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner\app\__init__.py
+  app.core imported successfully
+[VideoCaptioner] [OK] SubtitleSplit loaded
+[VideoCaptioner] base_node setup:
+  Current dir: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner
+  VideoCaptioner path: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner
+  Path exists: True
+  Clearing conflicting modules...
+    Removing: app
+    Removing: app.core
+    Removing: app.core.subtitle_processor
+    Removing: app.config
+    Removing: app.core.utils
+    Removing: app.core.utils.logger
+    Removing: app.core.bk_asr.asr_data
+    Removing: app.core.storage.constants
+    Removing: app.core.storage.models
+    Removing: app.core.storage.database
+    Removing: app.core.storage.cache_manager
+    Removing: app.core.storage
+    Removing: app.core.bk_asr.base
+    Removing: app.core.bk_asr.bcut
+    Removing: app.core.utils.subprocess_helper
+    Removing: app.core.bk_asr.faster_whisper
+    Removing: app.core.bk_asr.jianying
+    Removing: app.core.bk_asr.whisper_torch
+    Removing: app.core.entities
+    Removing: app.core.bk_asr.transcribe
+    Removing: app.core.bk_asr
+    Removing: app.core.subtitle_processor.prompt
+    Removing: app.core.subtitle_processor.split
+  Added to sys.path[0]: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner
+  app module location: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner\app\__init__.py
+  app.core imported successfully
+[VideoCaptioner] [OK] SubtitleTranslate loaded
+[VideoCaptioner] base_node setup:
+  Current dir: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner
+  VideoCaptioner path: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner
+  Path exists: True
+  Clearing conflicting modules...
+    Removing: app
+    Removing: app.core
+    Removing: app.core.subtitle_processor
+    Removing: app.config
+    Removing: app.core.utils
+    Removing: app.core.utils.logger
+    Removing: app.core.bk_asr.asr_data
+    Removing: app.core.storage.constants
+    Removing: app.core.storage.models
+    Removing: app.core.storage.database
+    Removing: app.core.storage.cache_manager
+    Removing: app.core.storage
+    Removing: app.core.bk_asr.base
+    Removing: app.core.bk_asr.bcut
+    Removing: app.core.utils.subprocess_helper
+    Removing: app.core.bk_asr.faster_whisper
+    Removing: app.core.bk_asr.jianying
+    Removing: app.core.bk_asr.whisper_torch
+    Removing: app.core.entities
+    Removing: app.core.bk_asr.transcribe
+    Removing: app.core.bk_asr
+    Removing: app.core.subtitle_processor.prompt
+    Removing: app.core.subtitle_processor.translate
+  Added to sys.path[0]: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner
+  app module location: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner\app\__init__.py
+  app.core imported successfully
+[VideoCaptioner] [OK] SubtitleOptimize loaded
+[VideoCaptioner] [OK] SubtitleOptimizer loaded
+[VideoCaptioner] ConfigNodes dependencies loaded successfully
+[VideoCaptioner] [OK] Config nodes loaded (3 nodes)
+[VideoCaptioner] base_node setup:
+  Current dir: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner
+  VideoCaptioner path: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner
+  Path exists: True
+  Clearing conflicting modules...
+    Removing: app
+    Removing: app.core
+    Removing: app.core.subtitle_processor
+    Removing: app.config
+    Removing: app.core.utils
+    Removing: app.core.utils.logger
+    Removing: app.core.bk_asr.asr_data
+    Removing: app.core.storage.constants
+    Removing: app.core.storage.models
+    Removing: app.core.storage.database
+    Removing: app.core.storage.cache_manager
+    Removing: app.core.storage
+    Removing: app.core.bk_asr.base
+    Removing: app.core.bk_asr.bcut
+    Removing: app.core.utils.subprocess_helper
+    Removing: app.core.bk_asr.faster_whisper
+    Removing: app.core.bk_asr.jianying
+    Removing: app.core.bk_asr.whisper_torch
+    Removing: app.core.entities
+    Removing: app.core.bk_asr.transcribe
+    Removing: app.core.bk_asr
+    Removing: app.core.subtitle_processor.alignment
+    Removing: app.core.subtitle_processor.prompt
+    Removing: app.core.subtitle_processor.optimize
+    Removing: app.core.utils.optimize_subtitles
+  Added to sys.path[0]: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner
+  app module location: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner\app\__init__.py
+  app.core imported successfully
+[VideoCaptioner] [OK] Utility nodes loaded (1 node)
+[VideoCaptioner] base_node setup:
+  Current dir: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner
+  VideoCaptioner path: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner
+  Path exists: True
+  Clearing conflicting modules...
+    Removing: app
+    Removing: app.core
+  Added to sys.path[0]: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner
+  app module location: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner\VideoCaptioner\app\__init__.py
+  app.core imported successfully
+[VideoCaptioner] [OK] SubtitleTextProcessor loaded
+[VideoCaptioner] Successfully loaded 10 nodes
+[llama-cpp_vlm] Model cleanup hook applied!
+[32m[INFO][0m ### Loading: ComfyUI-Manager (V3.31.9)
+[32m[INFO][0m [ComfyUI-Manager] network_mode: public
+[32m[INFO][0m ### ComfyUI Version: v0.20.2-13-g9b09077a7 | Released on '2026-08-23'
+[1m[31m[ERROR][0m [ComfyUI-Manager] Failed to perform initial fetching 'alter-list.json': Cannot connect to host raw.githubusercontent.com:443 ssl:default [ָ�������������ٿ��á�]
+Traceback (most recent call last):
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\asyncio\windows_events.py", line 462, in finish_socket_func
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] 指定的网络名不再�用�
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\aiohttp\connector.py", line 1122, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\asyncio\base_events.py", line 1159, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\asyncio\base_events.py", line 1192, in _create_connection_transport
+    await waiter
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\asyncio\windows_events.py", line 803, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\asyncio\windows_events.py", line 466, in finish_socket_func
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] 指定的网络名不再�用�
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-manager\glob\manager_server.py", line 1729, in get_cache
+    json_obj = await manager_util.get_data(uri, True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-manager\glob\manager_util.py", line 145, in get_data
+    async with session.get(uri, headers=headers) as resp:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\aiohttp\client.py", line 1425, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\aiohttp\connector.py", line 1406, in _create_direct_connection
+    raise last_exc
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\aiohttp\connector.py", line 1375, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\aiohttp\connector.py", line 1130, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host raw.githubusercontent.com:443 ssl:default [指定的网络名不再�用�]
+[32m[INFO][0m [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[32m[INFO][0m [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[1m[31m[ERROR][0m [ComfyUI-Manager] Failed to perform initial fetching 'custom-node-list.json': Cannot connect to host raw.githubusercontent.com:443 ssl:default [ָ�������������ٿ��á�]
+Traceback (most recent call last):
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\asyncio\windows_events.py", line 462, in finish_socket_func
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] 指定的网络名不再�用�
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\aiohttp\connector.py", line 1122, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\asyncio\base_events.py", line 1159, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\asyncio\base_events.py", line 1192, in _create_connection_transport
+    await waiter
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\asyncio\windows_events.py", line 803, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\asyncio\windows_events.py", line 466, in finish_socket_func
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] 指定的网络名不再�用�
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-manager\glob\manager_server.py", line 1729, in get_cache
+    json_obj = await manager_util.get_data(uri, True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-manager\glob\manager_util.py", line 145, in get_data
+    async with session.get(uri, headers=headers) as resp:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\aiohttp\client.py", line 1425, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\aiohttp\connector.py", line 1406, in _create_direct_connection
+    raise last_exc
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\aiohttp\connector.py", line 1375, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\python\Lib\site-packages\aiohttp\connector.py", line 1130, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host raw.githubusercontent.com:443 ssl:default [指定的网络名不再�用�]
+[32m[INFO][0m --------------
+[32m[INFO][0m [91m ### Mixlab Nodes: [93mLoaded
+json_repair## OK
+[32m[INFO][0m ChatGPT.available True
+[32m[INFO][0m edit_mask.available True
+## clip_interrogator_model not found: E:\ComfyUIV9.5\ComfyUI-V9.5\models\clip_interrogator\Salesforce\blip-image-captioning-base, pls download from https://huggingface.co/Salesforce/blip-image-captioning-base
+[32m[INFO][0m ClipInterrogator.available True
+## text_generator_model not found: E:\ComfyUIV9.5\ComfyUI-V9.5\models\prompt_generator\text2image-prompt-generator, pls download from https://huggingface.co/succinctly/text2image-prompt-generator/tree/main
+## zh_en_model not found: E:\ComfyUIV9.5\ComfyUI-V9.5\models\prompt_generator\opus-mt-zh-en, pls download from https://huggingface.co/Helsinki-NLP/opus-mt-zh-en/tree/main
+[32m[INFO][0m PromptGenerate.available True
+[32m[INFO][0m ChinesePrompt.available True
+[32m[INFO][0m RembgNode_.available True
+[32m[INFO][0m [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[32m[INFO][0m TripoSR.available
+[32m[INFO][0m MiniCPMNode.available
+[32m[INFO][0m Scenedetect.available
+[32m[INFO][0m FishSpeech.available
+[32m[INFO][0m SenseVoice.available
+[32m[INFO][0m Whisper.available False
+fal-client## OK
+[32m[INFO][0m FalVideo.available
+[32m[INFO][0m [93m -------------- [0m
+[32m[INFO][0m MultiGPU: Checking for module at E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-LTXVideo
+[32m[INFO][0m MultiGPU: Module ComfyUI-LTXVideo not found - skipping
+[32m[INFO][0m MultiGPU: Checking for module at E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-ltxvideo
+[32m[INFO][0m MultiGPU: Module comfyui-ltxvideo not found - skipping
+[32m[INFO][0m MultiGPU: Checking for module at E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-Florence2
+[32m[INFO][0m MultiGPU: Found ComfyUI-Florence2, creating compatible MultiGPU nodes
+[32m[INFO][0m MultiGPU: Checking for module at E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI_bitsandbytes_NF4
+[32m[INFO][0m MultiGPU: Module ComfyUI_bitsandbytes_NF4 not found - skipping
+[32m[INFO][0m MultiGPU: Checking for module at E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui_bitsandbytes_nf4
+[32m[INFO][0m MultiGPU: Module comfyui_bitsandbytes_nf4 not found - skipping
+[32m[INFO][0m MultiGPU: Checking for module at E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\x-flux-comfyui
+[32m[INFO][0m MultiGPU: Module x-flux-comfyui not found - skipping
+[32m[INFO][0m MultiGPU: Checking for module at E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\x-flux-comfyui
+[32m[INFO][0m MultiGPU: Module x-flux-comfyui not found - skipping
+[32m[INFO][0m MultiGPU: Checking for module at E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-MMAudio
+[32m[INFO][0m MultiGPU: Module ComfyUI-MMAudio not found - skipping
+[32m[INFO][0m MultiGPU: Checking for module at E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-mmaudio
+[32m[INFO][0m MultiGPU: Module comfyui-mmaudio not found - skipping
+[32m[INFO][0m MultiGPU: Checking for module at E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-GGUF
+[32m[INFO][0m MultiGPU: Found ComfyUI-GGUF, creating compatible MultiGPU nodes
+[32m[INFO][0m MultiGPU: Checking for module at E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\PuLID_ComfyUI
+[32m[INFO][0m MultiGPU: Module PuLID_ComfyUI not found - skipping
+[32m[INFO][0m MultiGPU: Checking for module at E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\pulid_comfyui
+[32m[INFO][0m MultiGPU: Module pulid_comfyui not found - skipping
+[32m[INFO][0m MultiGPU: Checking for module at E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-HunyuanVideoWrapper
+[32m[INFO][0m MultiGPU: Module ComfyUI-HunyuanVideoWrapper not found - skipping
+[32m[INFO][0m MultiGPU: Checking for module at E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-hunyuanvideowrapper
+[32m[INFO][0m MultiGPU: Module comfyui-hunyuanvideowrapper not found - skipping
+[32m[INFO][0m MultiGPU: Checking for module at E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-WanVideoWrapper
+[32m[INFO][0m MultiGPU: Found ComfyUI-WanVideoWrapper, creating compatible MultiGPU nodes
+[32m[INFO][0m MultiGPU: Registration complete. Final mappings: DeviceSelectorMultiGPU, HunyuanVideoEmbeddingsAdapter, MergeFluxLoRAsQuantizeAndLoaddMultiGPU, UNETLoaderMultiGPU, VAELoaderMultiGPU, CLIPLoaderMultiGPU, DualCLIPLoaderMultiGPU, TripleCLIPLoaderMultiGPU, QuadrupleCLIPLoaderMultiGPU, CLIPVisionLoaderMultiGPU, CheckpointLoaderSimpleMultiGPU, ControlNetLoaderMultiGPU, Florence2ModelLoaderMultiGPU, DownloadAndLoadFlorence2ModelMultiGPU, UnetLoaderGGUFMultiGPU, UnetLoaderGGUFDisTorchMultiGPU, UnetLoaderGGUFAdvancedMultiGPU, UnetLoaderGGUFAdvancedDisTorchMultiGPU, CLIPLoaderGGUFMultiGPU, CLIPLoaderGGUFDisTorchMultiGPU, DualCLIPLoaderGGUFMultiGPU, DualCLIPLoaderGGUFDisTorchMultiGPU, TripleCLIPLoaderGGUFMultiGPU, TripleCLIPLoaderGGUFDisTorchMultiGPU, QuadrupleCLIPLoaderGGUFMultiGPU, QuadrupleCLIPLoaderGGUFDisTorchMultiGPU, WanVideoModelLoaderMultiGPU, WanVideoVAELoaderMultiGPU, LoadWanVideoT5TextEncoderMultiGPU
+
+********
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+********
+ 
+FETCH ComfyRegistry Data: 5/217
+------------------------------------------
+[34mComfyroll Studio v1.76 : [92m 175 Nodes Loaded[0m
+------------------------------------------
+** For changes, please see patch notes at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/blob/main/Patch_Notes.md
+** For help, please see the wiki at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/wiki
+------------------------------------------
+[36;20m[E:\ComfyUIV9_x_5\ComfyUI-V9_x_5\custom_nodes\comfyui_controlnet_aux] | INFO -> Using ckpts path: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui_controlnet_aux\ckpts[0m
+[36;20m[E:\ComfyUIV9_x_5\ComfyUI-V9_x_5\custom_nodes\comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
+[36;20m[E:\ComfyUIV9_x_5\ComfyUI-V9_x_5\custom_nodes\comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
+DWPose: Onnxruntime with acceleration providers detected
+xfuser not found
+
+     ██████� ██�   ██� █████╗ ███╗   ██�    ██████� ███╗   ██�
+     ██╔══██╗╚██╗ ██╔╝██╔══██╗████�  ██�   ██╔═══██╗████╗  ██�
+     ██████╔╝ ╚████╔� ███████║██╔██╗ ██�   ██�   ██║██╔██� ██�
+     ██╔══██╗  ╚██╔�  ██╔══██║██║╚██╗██║   ██�   ██║██║╚██╗██�
+     ██�  ██�   ██�   ██�  ██║██║ ╚████║   ╚██████╔╝██║ ╚████║
+     ╚═�  ╚═�   ╚═�   ╚═�  ╚═╝╚═╝  ╚═══�   ╚═════� ╚═�  ╚═══�
+████████╗██╗  ██╗███████�   ██╗███�   ██╗███████╗██╗██████� ███████╗
+╚══██╔══╝██║  ██║██╔════�   ██║████╗  ██║██╔════╝██║██╔══██╗██╔════╝
+   ██�   ███████║█████╗     ██║██╔██� ██║███████╗██║██�  ██║█████�  
+   ██�   ██╔══██║██╔══╝     ██║██║╚██╗██║╚════██║██║██�  ██║██╔══�  
+   ██�   ██�  ██║███████�   ██║██║ ╚████║███████║██║██████╔╝███████�
+   ╚═�   ╚═�  ╚═╝╚══════�   ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝╚═════� ╚══════╝
+
+             � R Y A N   O N   T H E   I N S I D E �
+
+      
+[RyanOnTheInside] Copying extension file: widget_hotkey.js
+Checking for AdvancedLivePortrait at: None
+Checking for Advanced-ControlNet at: None
+Checking for AnimateDiff-Evolved at: None
+ComfyUI-AdvancedLivePortrait not found. FlexExpressionEditor will not be available. Install ComfyUI-AdvancedLivePortrait and restart ComfyUI.
+ComfyUI-Advanced-ControlNet not found. Advanced-ControlNet feature nodes will not be available. Install ComfyUI-Advanced-ControlNet and restart ComfyUI.
+ComfyUI-AnimateDiff-Evolved not found. AnimateDiff feature nodes will not be available. Install ComfyUI-AnimateDiff-Evolved and restart ComfyUI.
+[comfyui_ryanontheinside.acestep] [ACE-Step Patches] Patched AceStepConditionGenerationModel.forward
+[comfyui_ryanontheinside.acestep] [ACE-Step Patches] Patched ACE15Tokenizer.tokenize_with_weights
+[comfyui_ryanontheinside.acestep] [ACE-Step Patches] All patches applied successfully
+[CRT-Nodes __init__] Importing node classes...
+Loading crt-nodes module
+[36;20m[comfyui_controlnet_aux] | INFO -> Using ckpts path: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui_controlnet_aux\ckpts[0m
+[36;20m[comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
+[36;20m[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
+� ControlNet Aux loaded from 'comfyui_controlnet_aux' with 47 preprocessors
+[CRT-Nodes __init__] Registering custom model paths...
+... 'ultralytics_bbox' path registered.
+... 'ultralytics_segm' path registered.
+[CRT-Nodes __init__] INITIALIZATION COMPLETE.
+
+[38;5;201m ██████�[38;5;165m██�   ██�[38;5;129m██████� [38;5;93m███████╗[38;5;57m██████� [38;5;21m██████� [38;5;27m██�   ██�[38;5;33m███╗   ██�[38;5;39m██�  ██�[0m
+[38;5;201m██╔════╝[38;5;165m╚██╗ ██╔╝[38;5;129m██╔══██╗[38;5;93m██╔════╝[38;5;57m██╔══██╗[38;5;21m██╔══██╗[38;5;27m██�   ██�[38;5;33m████�  ██�[38;5;39m██� ██╔╝[0m
+[38;5;201m██�     [38;5;165m ╚████╔� [38;5;129m██████╔╝[38;5;93m█████╗  [38;5;57m██████╔╝[38;5;21m██████╔╝[38;5;27m██�   ██�[38;5;33m██╔██╗ ██�[38;5;39m█████╔� [0m
+[38;5;201m██�     [38;5;165m  ╚██╔�  [38;5;129m██╔══██╗[38;5;93m██╔══╝  [38;5;57m██╔═══� [38;5;21m██╔═══� [38;5;27m██�   ██�[38;5;33m██║╚██╗██║[38;5;39m██╔═██� [0m
+[38;5;201m╚██████╗[38;5;165m   ██�   [38;5;129m██████╔╝[38;5;93m███████╗[38;5;57m██�     [38;5;21m██�     [38;5;27m╚██████╔�[38;5;33m██� ╚████║[38;5;39m██�  ██�[0m
+[38;5;201m ╚═════�[38;5;165m   ╚═�   [38;5;129m╚═════� [38;5;93m╚══════╝[38;5;57m╚═�     [38;5;21m╚═�     [38;5;27m ╚═════� [38;5;33m╚═�  ╚═══�[38;5;39m╚═�  ╚═�[0m
+
+[38;5;51m🚀 CYBERPUNK-STYLE-DIY Custom Nodes Loaded! 🚀[0m
+
+
+[92m[rgthree-comfy] Loaded 47 fantastic nodes. 🎉[0m
+
+[32m[INFO][0m 
+Import times for custom nodes:
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-TT-Resolution_selector-Node
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\websocket_image_save.py
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\wanblockswap
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-MiniMaxH3DualClockSampler
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\reservedvram
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-qwenmultiangle
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-GGUF
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-modelscope-qwen-image
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\CYBERPUNK-STYLE-DIY
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-PromptRelay
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-MiniMax-H3-Sampler-Unlimited
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-MelBandRoFormer
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\AIGODLIKE-ComfyUI-Translation
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-Memory_Cleanup
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\HeartMuLa_ComfyUI
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-multigpu
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-MusicPlayerNode
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-MiniMax-H3-Image-Studio
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-Free-GPU
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-H3-Conditioning-Cache-AI-Drama-Production-Suite
+[32m[INFO][0m    0.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-MiniMax-H3-Turbo
+[32m[INFO][0m    0.1 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-various
+[32m[INFO][0m    0.1 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-custom-scripts
+[32m[INFO][0m    0.1 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyLiterals
+[32m[INFO][0m    0.1 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-florence2
+[32m[INFO][0m    0.1 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-H3-Prompt-Builder
+[32m[INFO][0m    0.1 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-H3-Motion-Context-MultiRef
+[32m[INFO][0m    0.1 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-ALLinONE-MinimaxH3
+[32m[INFO][0m    0.1 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-speed-minimaxH3
+[32m[INFO][0m    0.1 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-QwenVL
+[32m[INFO][0m    0.1 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-WanAnimatePreprocess
+[32m[INFO][0m    0.1 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-MiniMax-H3-StoryBoard
+[32m[INFO][0m    0.1 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-SelfLift
+[32m[INFO][0m    0.1 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-frame-interpolation
+[32m[INFO][0m    0.1 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-KJNodes
+[32m[INFO][0m    0.2 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-TD-Qwen3TTS
+[32m[INFO][0m    0.2 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui_essentials
+[32m[INFO][0m    0.2 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-segment-anything-2
+[32m[INFO][0m    0.2 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-VideoHelperSuite
+[32m[INFO][0m    0.4 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Goohaitools-comfyui
+[32m[INFO][0m    0.4 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI_Comfyroll_CustomNodes
+[32m[INFO][0m    0.5 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-llama-cpp_vlm
+[32m[INFO][0m    0.5 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-QwenTTS
+[32m[INFO][0m    0.5 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui_controlnet_aux
+[32m[INFO][0m    0.8 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui_ryanonyheinside
+[32m[INFO][0m    0.9 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-tensorops
+[32m[INFO][0m    1.7 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\CRT-Nodes
+[32m[INFO][0m    2.2 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI_RH_FlashHead
+[32m[INFO][0m    2.9 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-WanVideoWrapper
+[32m[INFO][0m    3.7 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-Crystools
+[32m[INFO][0m    4.5 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-manager
+[32m[INFO][0m    4.8 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\rgthree-comfy
+[32m[INFO][0m    7.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\audio-separation-nodes-comfyui
+[32m[INFO][0m    9.1 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\Comfyui-HAIGC-videocaptioner
+[32m[INFO][0m   14.2 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-mixlab-nodes
+[32m[INFO][0m   14.3 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\ComfyUI-GIMM-VFI
+[32m[INFO][0m   48.0 seconds: E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-easy-use
+[32m[INFO][0m 
+[32m[INFO][0m Context impl SQLiteImpl.
+[32m[INFO][0m Will assume non-transactional DDL.
+[1m[31m[ERROR][0m Failed to initialize database. Please ensure you have installed the latest requirements. If the error persists, please report this as in future the database will be required: No module named 'app.database'
+[32m[INFO][0m Disabling intermediate node cache.
+[1m[33m[WARNING][0m ________________________________________________________________________
+WARNING WARNING WARNING WARNING WARNING
+
+Installed comfyui-frontend-package version 1.42.15 is lower than the recommended version 1.49.6.
+Installed comfyui-workflow-templates version 0.9.68 is lower than the recommended version 0.11.44.
+Installed comfyui-embedded-docs version 0.4.4 is lower than the recommended version 0.5.10.
+
+Please install the updated requirements.txt file by running:
+E:\ComfyUIV9.5\ComfyUI-V9.5\python\python.exe -m pip install -r E:\ComfyUIV9.5\ComfyUI-V9.5\requirements.txt
+If you are on the portable package you can run: update\update_comfyui.bat to solve this problem.
+________________________________________________________________________
+[32m[INFO][0m Starting server
+
+[32m[INFO][0m To see the GUI go to: http://0.0.0.0:8188
+FETCH ComfyRegistry Data: 10/217
+FETCH ComfyRegistry Data: 15/217
+FETCH ComfyRegistry Data: 20/217
+FETCH ComfyRegistry Data: 25/217
+FETCH ComfyRegistry Data: 30/217
+FETCH ComfyRegistry Data: 35/217
+FETCH ComfyRegistry Data: 40/217
+FETCH ComfyRegistry Data: 45/217
+FETCH ComfyRegistry Data: 50/217
+FETCH ComfyRegistry Data: 55/217
+[32m[INFO][0m got prompt
+FETCH ComfyRegistry Data: 60/217
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Detected mixed precision quantization
+[32m[INFO][0m Using mixed precision operations
+[32m[INFO][0m Native ops: int8_tensorwise, convrot_w4a4, asym_w4a8_int8 , emulated ops: nvfp4, mxfp8, float8_e5m2, float8_e4m3fn
+[32m[INFO][0m model weight dtype torch.bfloat16, manual cast: torch.bfloat16
+[32m[INFO][0m model_type FLOW_AV
+[MiniMaxH3TurboLoRA] pruned base [merge]: lora=minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors strength=1.0 | 208 backbone modules, 208 weights patched (merged) | model=MiniMaxH3 weight_dtype=torch.bfloat16 weight_dev=cpu
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Using MixedPrecisionOps for text encoder
+[32m[INFO][0m CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[32m[INFO][0m Requested to load MiniMaxH3TEModel_
+[32m[INFO][0m Model MiniMaxH3TEModel_ prepared for dynamic VRAM loading. 25882MB Staged. 0 patches attached. Force pre-loaded 310 weights: 1272 KB.
+FETCH ComfyRegistry Data: 65/217
+FETCH ComfyRegistry Data: 70/217
+FETCH ComfyRegistry Data: 75/217
+[32m[INFO][0m [SelfLift plan] low_latent=(1, 24, 22, 16, 28) target_latent=(1, 24, 22, 30, 54) spatial_lift=(1.8750, 1.9286) low_nfe=3 high_nfe=1 sigma_prediction=0.92307693 sigma_resume=0.80000001 rho=0.0000 weights=(1.0000, 1.0000) direct_lift=external pixel_anchor=False cfg=1.0000 mask=none hires_model=same
+[32m[INFO][0m [SelfLift timing] low_resolution start (wall time; no forced CUDA sync) latent=(16, 28) pixels=(256, 448)
+[32m[INFO][0m Requested to load MiniMaxH3
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+FETCH ComfyRegistry Data: 80/217
+FETCH ComfyRegistry Data: 85/217
+  0%|          | 0/3 [00:00<?, ?it/s]  0%|          | 0/3 [00:00<?, ?it/s,   Model Initializing ...  ][H3TURBO fwd pruned/merge] call#1  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=1000.00  video_rms=1.0033 audio_rms=0.9939 dtype=torch.bfloat16
+FETCH ComfyRegistry Data: 90/217
+FETCH ComfyRegistry Data: 95/217
+[32m[INFO][0m [SelfLift timing] low_resolution step 1/3 (includes setup): 34.721s
+  0%|          | 0/3 [00:24<?, ?it/s,  Model Initialization complete!  ] 33%|███▎      | 1/3 [00:24<00:49, 24.62s/it,  Model Initialization complete!  ][H3TURBO fwd pruned/merge] call#2  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=972.97  video_rms=0.9783 audio_rms=0.9007 dtype=torch.bfloat16
+FETCH ComfyRegistry Data: 100/217
+[32m[INFO][0m [SelfLift timing] low_resolution step 2/3: 4.246s
+ 33%|███▎      | 1/3 [00:08<00:49, 24.62s/it]                                    67%|██████�   | 2/3 [00:08<00:04,  4.25s/it][H3TURBO fwd pruned/merge] call#3  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=923.08  video_rms=0.9327 audio_rms=0.7572 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 3/3: 3.252s
+100%|██████████| 3/3 [00:11<00:00,  3.25s/it]100%|██████████| 3/3 [00:11<00:00,  3.92s/it]
+[32m[INFO][0m [SelfLift timing] low_resolution total: 42.224s; after last mark: 0.005s
+[32m[INFO][0m [SelfLift timing] transition start (wall time; no forced CUDA sync) latent=(30, 54) pixels=(480, 864)
+[32m[INFO][0m [SelfLift timing] transition prepare_endpoint: 0.602s
+[32m[INFO][0m [SelfLift upscaler] model=minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors dtype=torch.bfloat16 input=(1, 24, 22, 16, 28) target_hw=(30, 54) spatial_lift=(1.8750, 1.9286) scale_embedding=0.9018 mode=full chunk=32 overlap=0 windows=1 max_input_window=22 budget_window=22 estimated_workspace=278.44 MiB
+[32m[INFO][0m Requested to load LatentResizer3D
+[32m[INFO][0m Model LatentResizer3D prepared for dynamic VRAM loading. 0MB Staged. 0 patches attached. Force pre-loaded 322 weights: 674375 KB.
+[32m[INFO][0m [SelfLift timing] transition paired_lifts: 5.187s
+[32m[INFO][0m [SelfLift timing] transition correction_and_debug: 0.002s
+[32m[INFO][0m [SelfLift timing] transition renoise: 0.019s
+[32m[INFO][0m [SelfLift timing] transition total: 5.810s; after last mark: 0.000s
+[32m[INFO][0m [SelfLift timing] high_resolution start (wall time; no forced CUDA sync) latent=(30, 54) pixels=(480, 864)
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+  0%|          | 0/1 [00:00<?, ?it/s]  0%|          | 0/1 [00:00<?, ?it/s,   Model Initializing ...  ][H3TURBO fwd pruned/merge] call#4  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=800.00  video_rms=0.8246 audio_rms=0.5447 dtype=torch.bfloat16
+FETCH ComfyRegistry Data: 105/217
+FETCH ComfyRegistry Data: 110/217
+[32m[INFO][0m [SelfLift timing] high_resolution step 1/1 (includes setup): 10.744s
+  0%|          | 0/1 [00:10<?, ?it/s,  Model Initialization complete!  ]100%|██████████| 1/1 [00:10<00:00, 10.02s/it,  Model Initialization complete!  ]100%|██████████| 1/1 [00:10<00:00, 10.02s/it,  Model Initialization complete!  ]
+[32m[INFO][0m [SelfLift timing] high_resolution total: 11.688s; after last mark: 0.944s
+[32m[INFO][0m Requested to load MiniMaxH3AudioVAE
+[32m[INFO][0m Model MiniMaxH3AudioVAE prepared for dynamic VRAM loading. 576MB Staged. 0 patches attached. Force pre-loaded 401 weights: 539 KB.
+[32m[INFO][0m Requested to load MiniMaxH3VideoVAE
+[32m[INFO][0m Model MiniMaxH3VideoVAE prepared for dynamic VRAM loading. 4965MB Staged. 0 patches attached. Force pre-loaded 128 weights: 348 KB.
+FETCH ComfyRegistry Data: 115/217
+FETCH ComfyRegistry Data: 120/217
+FETCH ComfyRegistry Data: 125/217
+FETCH ComfyRegistry Data: 130/217
+[32m[INFO][0m [32mPrompt executed in 136.86 seconds[0m
+FETCH ComfyRegistry Data: 135/217
+FETCH ComfyRegistry Data: 140/217
+FETCH ComfyRegistry Data: 145/217
+FETCH ComfyRegistry Data: 150/217
+[32m[INFO][0m got prompt
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Using MixedPrecisionOps for text encoder
+[32m[INFO][0m CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[32m[INFO][0m Requested to load MiniMaxH3TEModel_
+[32m[INFO][0m Model MiniMaxH3TEModel_ prepared for dynamic VRAM loading. 25882MB Staged. 0 patches attached. Force pre-loaded 310 weights: 1272 KB.
+FETCH ComfyRegistry Data: 155/217
+FETCH ComfyRegistry Data: 160/217
+FETCH ComfyRegistry Data: 165/217
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Detected mixed precision quantization
+[32m[INFO][0m Using mixed precision operations
+[32m[INFO][0m Native ops: int8_tensorwise, convrot_w4a4, asym_w4a8_int8 , emulated ops: nvfp4, mxfp8, float8_e5m2, float8_e4m3fn
+[32m[INFO][0m model weight dtype torch.bfloat16, manual cast: torch.bfloat16
+[32m[INFO][0m model_type FLOW_AV
+[MiniMaxH3TurboLoRA] pruned base [merge]: lora=minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors strength=1.0 | 208 backbone modules, 208 weights patched (merged) | model=MiniMaxH3 weight_dtype=torch.bfloat16 weight_dev=cpu
+[32m[INFO][0m Requested to load MiniMaxH3
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+FETCH ComfyRegistry Data: 170/217
+[H3TURBO sampler] native ModelSamplingAV -> single-schedule Euler  sigmas=[1.0, 0.973, 0.9231, 0.8, 0.0]  x.shape=(1, 1, 863168) dtype=torch.float32
+  0%|          | 0/4 [00:00<?, ?it/s][H3TURBO fwd pruned/merge] call#1  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=1000.00  video_rms=1.0005 audio_rms=0.9967 dtype=torch.bfloat16
+FETCH ComfyRegistry Data: 175/217
+[H3TURBO step 0] sv=1.0000->0.9730  denoised_rms=1.4787 x_rms=0.9750 d_rms=1.7704
+ 25%|██�       | 1/4 [00:24<01:14, 24.75s/it][H3TURBO fwd pruned/merge] call#2  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=972.97  video_rms=0.9750 audio_rms=0.9021 dtype=torch.bfloat16
+FETCH ComfyRegistry Data: 180/217
+[H3TURBO step 1] sv=0.9730->0.9231  denoised_rms=1.0147 x_rms=0.9294 d_rms=1.4053
+ 50%|████�     | 2/4 [00:35<00:33, 16.63s/it][H3TURBO fwd pruned/merge] call#3  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=923.08  video_rms=0.9293 audio_rms=0.7597 dtype=torch.bfloat16
+FETCH ComfyRegistry Data: 185/217
+FETCH ComfyRegistry Data: 190/217
+[H3TURBO step 2] sv=0.9231->0.8000  denoised_rms=1.0227 x_rms=0.8318 d_rms=1.4113
+ 75%|███████▌  | 3/4 [00:45<00:13, 13.70s/it][H3TURBO fwd pruned/merge] call#4  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=800.00  video_rms=0.8312 audio_rms=0.5578 dtype=torch.bfloat16
+FETCH ComfyRegistry Data: 195/217
+[H3TURBO step 3] sv=0.8000->0.0000  denoised_rms=1.0335 x_rms=1.0335 d_rms=1.4130
+100%|██████████| 4/4 [00:56<00:00, 12.33s/it]100%|██████████| 4/4 [00:56<00:00, 14.04s/it]
+[32m[INFO][0m Requested to load MiniMaxH3AudioVAE
+[32m[INFO][0m Model MiniMaxH3AudioVAE prepared for dynamic VRAM loading. 576MB Staged. 0 patches attached. Force pre-loaded 401 weights: 539 KB.
+[32m[INFO][0m Requested to load MiniMaxH3VideoVAE
+[32m[INFO][0m Model MiniMaxH3VideoVAE prepared for dynamic VRAM loading. 4965MB Staged. 0 patches attached. Force pre-loaded 128 weights: 348 KB.
+FETCH ComfyRegistry Data: 200/217
+FETCH ComfyRegistry Data: 205/217
+FETCH ComfyRegistry Data: 210/217
+FETCH ComfyRegistry Data: 215/217
+FETCH ComfyRegistry Data [DONE]
+[32m[INFO][0m [ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json[32m[INFO][0m [32mPrompt executed in 125.70 seconds[0m
+[32m[INFO][0m got prompt
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Using MixedPrecisionOps for text encoder
+[32m[INFO][0m CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[32m[INFO][0m Requested to load MiniMaxH3TEModel_
+[32m[INFO][0m Model MiniMaxH3TEModel_ prepared for dynamic VRAM loading. 25882MB Staged. 0 patches attached. Force pre-loaded 310 weights: 1272 KB.
+ [DONE]
+[32m[INFO][0m [ComfyUI-Manager] All startup tasks have been completed.
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Detected mixed precision quantization
+[32m[INFO][0m Using mixed precision operations
+[32m[INFO][0m Native ops: int8_tensorwise, convrot_w4a4, asym_w4a8_int8 , emulated ops: nvfp4, mxfp8, float8_e5m2, float8_e4m3fn
+[32m[INFO][0m model weight dtype torch.bfloat16, manual cast: torch.bfloat16
+[32m[INFO][0m model_type FLOW_AV
+[MiniMaxH3TurboLoRA] pruned base [merge]: lora=minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors strength=1.0 | 208 backbone modules, 208 weights patched (merged) | model=MiniMaxH3 weight_dtype=torch.bfloat16 weight_dev=cpu
+[32m[INFO][0m Requested to load MiniMaxH3
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+[H3TURBO sampler] native ModelSamplingAV -> single-schedule Euler  sigmas=[1.0, 0.9882, 0.973, 0.9524, 0.9231, 0.878, 0.8, 0.6316, 0.0]  x.shape=(1, 1, 863168) dtype=torch.float32
+  0%|          | 0/8 [00:00<?, ?it/s][H3TURBO fwd pruned/merge] call#1  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=1000.00  video_rms=1.0005 audio_rms=0.9967 dtype=torch.bfloat16
+[H3TURBO step 0] sv=1.0000->0.9882  denoised_rms=1.5098 x_rms=0.9890 d_rms=1.8052
+ 12%|█▎        | 1/8 [00:25<02:58, 25.54s/it][H3TURBO fwd pruned/merge] call#2  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=988.24  video_rms=0.9890 audio_rms=0.9529 dtype=torch.bfloat16
+[H3TURBO step 1] sv=0.9882->0.9730  denoised_rms=1.0658 x_rms=0.9743 d_rms=1.4516
+ 25%|██�       | 2/8 [00:37<01:43, 17.27s/it][H3TURBO fwd pruned/merge] call#3  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=972.97  video_rms=0.9743 audio_rms=0.9040 dtype=torch.bfloat16
+[H3TURBO step 2] sv=0.9730->0.9524  denoised_rms=1.0686 x_rms=0.9550 d_rms=1.4532
+ 38%|███▊      | 3/8 [00:48<01:14, 14.82s/it][H3TURBO fwd pruned/merge] call#4  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=952.38  video_rms=0.9549 audio_rms=0.8414 dtype=torch.bfloat16
+[H3TURBO step 3] sv=0.9524->0.9231  denoised_rms=1.0291 x_rms=0.9283 d_rms=1.4218
+ 50%|████�     | 4/8 [01:01<00:55, 13.79s/it][H3TURBO fwd pruned/merge] call#5  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=923.08  video_rms=0.9282 audio_rms=0.7653 dtype=torch.bfloat16
+[H3TURBO step 4] sv=0.9231->0.8780  denoised_rms=1.0100 x_rms=0.8896 d_rms=1.4053
+ 62%|██████�   | 5/8 [01:13<00:39, 13.22s/it][H3TURBO fwd pruned/merge] call#6  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=878.05  video_rms=0.8894 audio_rms=0.6694 dtype=torch.bfloat16
+[H3TURBO step 5] sv=0.8780->0.8000  denoised_rms=1.0049 x_rms=0.8300 d_rms=1.3970
+ 75%|███████▌  | 6/8 [01:25<00:25, 12.87s/it][H3TURBO step 6] sv=0.8000->0.6316  denoised_rms=1.0077 x_rms=0.7429 d_rms=1.3912
+ 88%|████████� | 7/8 [01:37<00:12, 12.62s/it][H3TURBO step 7] sv=0.6316->0.0000  denoised_rms=1.0220 x_rms=1.0220 d_rms=1.3862
+100%|██████████| 8/8 [01:49<00:00, 12.46s/it]100%|██████████| 8/8 [01:49<00:00, 13.72s/it]
+[32m[INFO][0m Requested to load MiniMaxH3AudioVAE
+[32m[INFO][0m Model MiniMaxH3AudioVAE prepared for dynamic VRAM loading. 576MB Staged. 0 patches attached. Force pre-loaded 401 weights: 539 KB.
+[32m[INFO][0m Requested to load MiniMaxH3VideoVAE
+[32m[INFO][0m Model MiniMaxH3VideoVAE prepared for dynamic VRAM loading. 4965MB Staged. 0 patches attached. Force pre-loaded 128 weights: 348 KB.
+[32m[INFO][0m [32mPrompt executed in 184.11 seconds[0m
+[32m[INFO][0m got prompt
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Detected mixed precision quantization
+[32m[INFO][0m Using mixed precision operations
+[32m[INFO][0m Native ops: int8_tensorwise, convrot_w4a4, asym_w4a8_int8 , emulated ops: nvfp4, mxfp8, float8_e5m2, float8_e4m3fn
+[32m[INFO][0m model weight dtype torch.bfloat16, manual cast: torch.bfloat16
+[32m[INFO][0m model_type FLOW_AV
+[MiniMaxH3TurboLoRA] pruned base [merge]: lora=minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors strength=1.0 | 208 backbone modules, 208 weights patched (merged) | model=MiniMaxH3 weight_dtype=torch.bfloat16 weight_dev=cpu
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Using MixedPrecisionOps for text encoder
+[32m[INFO][0m CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[32m[INFO][0m Requested to load MiniMaxH3TEModel_
+[32m[INFO][0m Model MiniMaxH3TEModel_ prepared for dynamic VRAM loading. 25882MB Staged. 0 patches attached. Force pre-loaded 310 weights: 1272 KB.
+[32m[INFO][0m [SelfLift plan] low_latent=(1, 24, 22, 16, 28) target_latent=(1, 24, 22, 30, 54) spatial_lift=(1.8750, 1.9286) low_nfe=3 high_nfe=1 sigma_prediction=0.92307693 sigma_resume=0.80000001 rho=0.0000 weights=(1.0000, 1.0000) direct_lift=external pixel_anchor=False cfg=1.0000 mask=none hires_model=same
+[32m[INFO][0m [SelfLift timing] low_resolution start (wall time; no forced CUDA sync) latent=(16, 28) pixels=(256, 448)
+[32m[INFO][0m Requested to load MiniMaxH3
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+  0%|          | 0/3 [00:00<?, ?it/s]  0%|          | 0/3 [00:00<?, ?it/s,   Model Initializing ...  ][H3TURBO fwd pruned/merge] call#1  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=1000.00  video_rms=1.0033 audio_rms=0.9939 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 1/3 (includes setup): 26.255s
+  0%|          | 0/3 [00:24<?, ?it/s,  Model Initialization complete!  ] 33%|███▎      | 1/3 [00:24<00:48, 24.02s/it,  Model Initialization complete!  ][H3TURBO fwd pruned/merge] call#2  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=972.97  video_rms=0.9783 audio_rms=0.9007 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 2/3: 4.977s
+ 33%|███▎      | 1/3 [00:09<00:48, 24.02s/it]                                    67%|██████�   | 2/3 [00:09<00:04,  4.97s/it][H3TURBO fwd pruned/merge] call#3  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=923.08  video_rms=0.9327 audio_rms=0.7572 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 3/3: 3.843s
+100%|██████████| 3/3 [00:13<00:00,  3.84s/it]100%|██████████| 3/3 [00:13<00:00,  4.59s/it]
+[32m[INFO][0m [SelfLift timing] low_resolution total: 35.099s; after last mark: 0.024s
+[32m[INFO][0m [SelfLift timing] transition start (wall time; no forced CUDA sync) latent=(30, 54) pixels=(480, 864)
+[32m[INFO][0m [SelfLift timing] transition prepare_endpoint: 0.698s
+[32m[INFO][0m [SelfLift upscaler] model=minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors dtype=torch.bfloat16 input=(1, 24, 22, 16, 28) target_hw=(30, 54) spatial_lift=(1.8750, 1.9286) scale_embedding=0.9018 mode=full chunk=32 overlap=0 windows=1 max_input_window=22 budget_window=22 estimated_workspace=278.44 MiB
+[32m[INFO][0m Requested to load LatentResizer3D
+[32m[INFO][0m Model LatentResizer3D prepared for dynamic VRAM loading. 0MB Staged. 0 patches attached. Force pre-loaded 322 weights: 674375 KB.
+[32m[INFO][0m [SelfLift timing] transition paired_lifts: 3.445s
+[32m[INFO][0m [SelfLift timing] transition correction_and_debug: 0.003s
+[32m[INFO][0m [SelfLift timing] transition renoise: 0.061s
+[32m[INFO][0m [SelfLift timing] transition total: 4.206s; after last mark: 0.000s
+[32m[INFO][0m [SelfLift timing] high_resolution start (wall time; no forced CUDA sync) latent=(30, 54) pixels=(480, 864)
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+  0%|          | 0/1 [00:00<?, ?it/s]  0%|          | 0/1 [00:00<?, ?it/s,   Model Initializing ...  ][H3TURBO fwd pruned/merge] call#4  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=800.00  video_rms=0.8246 audio_rms=0.5447 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] high_resolution step 1/1 (includes setup): 12.305s
+  0%|          | 0/1 [00:11<?, ?it/s,  Model Initialization complete!  ]100%|██████████| 1/1 [00:11<00:00, 11.40s/it,  Model Initialization complete!  ]100%|██████████| 1/1 [00:11<00:00, 11.40s/it,  Model Initialization complete!  ]
+[32m[INFO][0m [SelfLift timing] high_resolution total: 12.930s; after last mark: 0.625s
+[32m[INFO][0m Requested to load MiniMaxH3AudioVAE
+[32m[INFO][0m Model MiniMaxH3AudioVAE prepared for dynamic VRAM loading. 576MB Staged. 0 patches attached. Force pre-loaded 401 weights: 539 KB.
+[32m[INFO][0m Requested to load MiniMaxH3VideoVAE
+[32m[INFO][0m Model MiniMaxH3VideoVAE prepared for dynamic VRAM loading. 4965MB Staged. 0 patches attached. Force pre-loaded 128 weights: 348 KB.
+[32m[INFO][0m [32mPrompt executed in 130.28 seconds[0m
+[32m[INFO][0m got prompt
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Detected mixed precision quantization
+[32m[INFO][0m Using mixed precision operations
+[32m[INFO][0m Native ops: int8_tensorwise, convrot_w4a4, asym_w4a8_int8 , emulated ops: nvfp4, mxfp8, float8_e5m2, float8_e4m3fn
+[32m[INFO][0m model weight dtype torch.bfloat16, manual cast: torch.bfloat16
+[32m[INFO][0m model_type FLOW_AV
+[MiniMaxH3TurboLoRA] pruned base [merge]: lora=minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors strength=1.0 | 208 backbone modules, 208 weights patched (merged) | model=MiniMaxH3 weight_dtype=torch.bfloat16 weight_dev=cpu
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Using MixedPrecisionOps for text encoder
+[32m[INFO][0m CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[32m[INFO][0m Requested to load MiniMaxH3TEModel_
+[32m[INFO][0m Model MiniMaxH3TEModel_ prepared for dynamic VRAM loading. 25882MB Staged. 0 patches attached. Force pre-loaded 310 weights: 1272 KB.
+[32m[INFO][0m [SelfLift plan] low_latent=(1, 24, 22, 16, 28) target_latent=(1, 24, 22, 30, 54) spatial_lift=(1.8750, 1.9286) low_nfe=3 high_nfe=1 sigma_prediction=0.92307693 sigma_resume=0.80000001 rho=0.0000 weights=(1.0000, 1.0000) direct_lift=external pixel_anchor=False cfg=1.0000 mask=none hires_model=same
+[32m[INFO][0m [SelfLift timing] low_resolution start (wall time; no forced CUDA sync) latent=(16, 28) pixels=(256, 448)
+[32m[INFO][0m Requested to load MiniMaxH3
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+  0%|          | 0/3 [00:00<?, ?it/s]  0%|          | 0/3 [00:00<?, ?it/s,   Model Initializing ...  ][H3TURBO fwd pruned/merge] call#1  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=1000.00  video_rms=1.0033 audio_rms=0.9939 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 1/3 (includes setup): 30.652s
+  0%|          | 0/3 [00:28<?, ?it/s,  Model Initialization complete!  ] 33%|███▎      | 1/3 [00:28<00:56, 28.04s/it,  Model Initialization complete!  ][H3TURBO fwd pruned/merge] call#2  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=972.97  video_rms=0.9783 audio_rms=0.9007 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 2/3: 6.513s
+ 33%|███▎      | 1/3 [00:13<00:56, 28.04s/it]                                    67%|██████�   | 2/3 [00:13<00:06,  6.51s/it][H3TURBO fwd pruned/merge] call#3  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=923.08  video_rms=0.9327 audio_rms=0.7572 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 3/3: 3.973s
+100%|██████████| 3/3 [00:17<00:00,  3.97s/it]100%|██████████| 3/3 [00:17<00:00,  5.67s/it]
+[32m[INFO][0m [SelfLift timing] low_resolution total: 41.141s; after last mark: 0.003s
+[32m[INFO][0m [SelfLift timing] transition start (wall time; no forced CUDA sync) latent=(30, 54) pixels=(480, 864)
+[32m[INFO][0m [SelfLift timing] transition prepare_endpoint: 0.749s
+[1m[31m[ERROR][0m !!! Exception during processing !!! SelfLift: upscaler checkpoint is missing conv_in.weight
+[1m[31m[ERROR][0m Traceback (most recent call last):
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\execution.py", line 545, in execute
+    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)
+                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\execution.py", line 344, in get_output_data
+    return_values = await _async_map_node_over_list(prompt_id, unique_id, obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\execution.py", line 318, in _async_map_node_over_list
+    await process_inputs(input_dict, i)
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\execution.py", line 306, in process_inputs
+    result = f(**inputs)
+             ^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-SelfLift\nodes.py", line 510, in sample
+    return (progressive_sample(model, positive, negative, vae, latent_image, sampler, sigmas, seed, cfg,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-SelfLift\nodes.py", line 398, in progressive_sample
+    z_lat_vae, z_pix_vae = selflift.paired_lifts(
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-SelfLift\selflift.py", line 50, in paired_lifts
+    z_lat = latent_lifter(z0_low, (H, W))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-SelfLift\nodes.py", line 509, in <lambda>
+    lifter = lambda z, hw: h3_upscaler.learned_latent_lift(z, hw, upscaler_model, force_unload=upscaler_unload)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-SelfLift\h3_upscaler.py", line 363, in learned_latent_lift
+    patcher = _load_model(model_name, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-SelfLift\h3_upscaler.py", line 322, in _load_model
+    sd = _normalize_checkpoint_dtype(sd)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ComfyUIV9.5\ComfyUI-V9.5\custom_nodes\comfyui-SelfLift\h3_upscaler.py", line 290, in _normalize_checkpoint_dtype
+    raise ValueError("SelfLift: upscaler checkpoint is missing conv_in.weight")
+ValueError: SelfLift: upscaler checkpoint is missing conv_in.weight
+
+[32m[INFO][0m [32mPrompt executed in 77.15 seconds[0m
+[32m[INFO][0m got prompt
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Detected mixed precision quantization
+[32m[INFO][0m Using mixed precision operations
+[32m[INFO][0m Native ops: int8_tensorwise, convrot_w4a4, asym_w4a8_int8 , emulated ops: nvfp4, mxfp8, float8_e5m2, float8_e4m3fn
+[32m[INFO][0m model weight dtype torch.bfloat16, manual cast: torch.bfloat16
+[32m[INFO][0m model_type FLOW_AV
+[MiniMaxH3TurboLoRA] pruned base [merge]: lora=minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors strength=1.0 | 208 backbone modules, 208 weights patched (merged) | model=MiniMaxH3 weight_dtype=torch.bfloat16 weight_dev=cpu
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Using MixedPrecisionOps for text encoder
+[32m[INFO][0m CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[32m[INFO][0m Requested to load MiniMaxH3TEModel_
+[32m[INFO][0m Model MiniMaxH3TEModel_ prepared for dynamic VRAM loading. 25882MB Staged. 0 patches attached. Force pre-loaded 310 weights: 1272 KB.
+[32m[INFO][0m [SelfLift plan] low_latent=(1, 24, 22, 16, 28) target_latent=(1, 24, 22, 30, 54) spatial_lift=(1.8750, 1.9286) low_nfe=2 high_nfe=2 sigma_prediction=0.97297299 sigma_resume=0.92307693 rho=0.0000 weights=(1.0000, 1.0000) direct_lift=external pixel_anchor=False cfg=1.0000 mask=none hires_model=same
+[32m[INFO][0m [SelfLift timing] low_resolution start (wall time; no forced CUDA sync) latent=(16, 28) pixels=(256, 448)
+[32m[INFO][0m Requested to load MiniMaxH3
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+  0%|          | 0/2 [00:00<?, ?it/s]  0%|          | 0/2 [00:00<?, ?it/s,   Model Initializing ...  ][H3TURBO fwd pruned/merge] call#1  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=1000.00  video_rms=1.0033 audio_rms=0.9939 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 1/2 (includes setup): 41.407s
+  0%|          | 0/2 [00:37<?, ?it/s,  Model Initialization complete!  ] 50%|████�     | 1/2 [00:37<00:37, 37.75s/it,  Model Initialization complete!  ][H3TURBO fwd pruned/merge] call#2  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=972.97  video_rms=0.9783 audio_rms=0.9007 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 2/2: 7.399s
+ 50%|████�     | 1/2 [00:14<00:37, 37.75s/it]                                   100%|██████████| 2/2 [00:14<00:00,  7.40s/it]100%|██████████| 2/2 [00:14<00:00,  7.40s/it]
+[32m[INFO][0m [SelfLift timing] low_resolution total: 49.077s; after last mark: 0.271s
+[32m[INFO][0m [SelfLift timing] transition start (wall time; no forced CUDA sync) latent=(30, 54) pixels=(480, 864)
+[32m[INFO][0m [SelfLift timing] transition prepare_endpoint: 0.001s
+[32m[INFO][0m [SelfLift upscaler] model=minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors dtype=torch.bfloat16 input=(1, 24, 22, 16, 28) target_hw=(30, 54) spatial_lift=(1.8750, 1.9286) scale_embedding=0.9018 mode=full chunk=32 overlap=0 windows=1 max_input_window=22 budget_window=22 estimated_workspace=278.44 MiB
+[32m[INFO][0m Requested to load LatentResizer3D
+[32m[INFO][0m Model LatentResizer3D prepared for dynamic VRAM loading. 0MB Staged. 0 patches attached. Force pre-loaded 322 weights: 674375 KB.
+[32m[INFO][0m [SelfLift timing] transition paired_lifts: 2.638s
+[32m[INFO][0m [SelfLift timing] transition correction_and_debug: 0.004s
+[32m[INFO][0m [SelfLift timing] transition renoise: 0.034s
+[32m[INFO][0m [SelfLift timing] transition total: 2.680s; after last mark: 0.003s
+[32m[INFO][0m [SelfLift timing] high_resolution start (wall time; no forced CUDA sync) latent=(30, 54) pixels=(480, 864)
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+  0%|          | 0/2 [00:00<?, ?it/s]  0%|          | 0/2 [00:00<?, ?it/s,   Model Initializing ...  ][H3TURBO fwd pruned/merge] call#3  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=923.08  video_rms=0.9263 audio_rms=0.7572 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] high_resolution step 1/2 (includes setup): 14.883s
+  0%|          | 0/2 [00:13<?, ?it/s,  Model Initialization complete!  ] 50%|████�     | 1/2 [00:13<00:13, 13.98s/it,  Model Initialization complete!  ][H3TURBO fwd pruned/merge] call#4  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=800.00  video_rms=0.8247 audio_rms=0.5477 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] high_resolution step 2/2: 11.420s
+ 50%|████�     | 1/2 [00:22<00:13, 13.98s/it]                                   100%|██████████| 2/2 [00:22<00:00, 11.43s/it]100%|██████████| 2/2 [00:22<00:00, 11.43s/it]
+[32m[INFO][0m [SelfLift timing] high_resolution total: 28.344s; after last mark: 2.041s
+[32m[INFO][0m Requested to load MiniMaxH3AudioVAE
+[32m[INFO][0m Model MiniMaxH3AudioVAE prepared for dynamic VRAM loading. 576MB Staged. 0 patches attached. Force pre-loaded 401 weights: 539 KB.
+[32m[INFO][0m Requested to load MiniMaxH3VideoVAE
+[32m[INFO][0m Model MiniMaxH3VideoVAE prepared for dynamic VRAM loading. 4965MB Staged. 0 patches attached. Force pre-loaded 128 weights: 348 KB.
+[32m[INFO][0m [32mPrompt executed in 172.97 seconds[0m
+[32m[INFO][0m got prompt
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Detected mixed precision quantization
+[32m[INFO][0m Using mixed precision operations
+[32m[INFO][0m Native ops: int8_tensorwise, convrot_w4a4, asym_w4a8_int8 , emulated ops: nvfp4, mxfp8, float8_e5m2, float8_e4m3fn
+[32m[INFO][0m model weight dtype torch.bfloat16, manual cast: torch.bfloat16
+[32m[INFO][0m model_type FLOW_AV
+[MiniMaxH3TurboLoRA] pruned base [merge]: lora=minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors strength=1.0 | 208 backbone modules, 208 weights patched (merged) | model=MiniMaxH3 weight_dtype=torch.bfloat16 weight_dev=cpu
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Using MixedPrecisionOps for text encoder
+[32m[INFO][0m CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[32m[INFO][0m Requested to load MiniMaxH3TEModel_
+[32m[INFO][0m Model MiniMaxH3TEModel_ prepared for dynamic VRAM loading. 25882MB Staged. 0 patches attached. Force pre-loaded 310 weights: 1272 KB.
+[32m[INFO][0m [SelfLift plan] low_latent=(1, 24, 22, 12, 22) target_latent=(1, 24, 22, 30, 54) spatial_lift=(2.5000, 2.4545) low_nfe=3 high_nfe=1 sigma_prediction=0.92307693 sigma_resume=0.80000001 rho=0.0000 weights=(1.0000, 1.0000) direct_lift=external pixel_anchor=False cfg=1.0000 mask=none hires_model=same
+[32m[INFO][0m [SelfLift timing] low_resolution start (wall time; no forced CUDA sync) latent=(12, 22) pixels=(192, 352)
+[32m[INFO][0m Requested to load MiniMaxH3
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+  0%|          | 0/3 [00:00<?, ?it/s]  0%|          | 0/3 [00:00<?, ?it/s,   Model Initializing ...  ][H3TURBO fwd pruned/merge] call#1  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=1000.00  video_rms=1.0041 audio_rms=1.0203 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 1/3 (includes setup): 28.123s
+  0%|          | 0/3 [00:25<?, ?it/s,  Model Initialization complete!  ] 33%|███▎      | 1/3 [00:25<00:50, 25.41s/it,  Model Initialization complete!  ][H3TURBO fwd pruned/merge] call#2  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=972.97  video_rms=0.9790 audio_rms=0.9264 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 2/3: 4.941s
+ 33%|███▎      | 1/3 [00:09<00:50, 25.41s/it]                                    67%|██████�   | 2/3 [00:09<00:04,  4.94s/it][H3TURBO fwd pruned/merge] call#3  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=923.08  video_rms=0.9339 audio_rms=0.7803 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 3/3: 2.850s
+100%|██████████| 3/3 [00:12<00:00,  2.85s/it]100%|██████████| 3/3 [00:12<00:00,  4.24s/it]
+[32m[INFO][0m [SelfLift timing] low_resolution total: 35.917s; after last mark: 0.004s
+[32m[INFO][0m [SelfLift timing] transition start (wall time; no forced CUDA sync) latent=(30, 54) pixels=(480, 864)
+[32m[INFO][0m [SelfLift timing] transition prepare_endpoint: 0.585s
+[32m[INFO][0m [SelfLift upscaler] model=minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors dtype=torch.bfloat16 input=(1, 24, 22, 12, 22) target_hw=(30, 54) spatial_lift=(2.5000, 2.4545) scale_embedding=1.4773 mode=full chunk=32 overlap=0 windows=1 max_input_window=22 budget_window=22 estimated_workspace=278.44 MiB
+[32m[INFO][0m Requested to load LatentResizer3D
+[32m[INFO][0m Model LatentResizer3D prepared for dynamic VRAM loading. 0MB Staged. 0 patches attached. Force pre-loaded 322 weights: 674375 KB.
+[32m[INFO][0m [SelfLift timing] transition paired_lifts: 5.574s
+[32m[INFO][0m [SelfLift timing] transition correction_and_debug: 0.002s
+[32m[INFO][0m [SelfLift timing] transition renoise: 0.041s
+[32m[INFO][0m [SelfLift timing] transition total: 6.202s; after last mark: 0.000s
+[32m[INFO][0m [SelfLift timing] high_resolution start (wall time; no forced CUDA sync) latent=(30, 54) pixels=(480, 864)
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+  0%|          | 0/1 [00:00<?, ?it/s]  0%|          | 0/1 [00:00<?, ?it/s,   Model Initializing ...  ][H3TURBO fwd pruned/merge] call#4  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=800.00  video_rms=0.8216 audio_rms=0.5668 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] high_resolution step 1/1 (includes setup): 12.320s
+  0%|          | 0/1 [00:11<?, ?it/s,  Model Initialization complete!  ]100%|██████████| 1/1 [00:11<00:00, 11.32s/it,  Model Initialization complete!  ]100%|██████████| 1/1 [00:11<00:00, 11.32s/it,  Model Initialization complete!  ]
+[32m[INFO][0m [SelfLift timing] high_resolution total: 12.928s; after last mark: 0.608s
+[32m[INFO][0m Requested to load MiniMaxH3AudioVAE
+[32m[INFO][0m Model MiniMaxH3AudioVAE prepared for dynamic VRAM loading. 576MB Staged. 0 patches attached. Force pre-loaded 401 weights: 539 KB.
+[32m[INFO][0m Requested to load MiniMaxH3VideoVAE
+[32m[INFO][0m Model MiniMaxH3VideoVAE prepared for dynamic VRAM loading. 4965MB Staged. 0 patches attached. Force pre-loaded 128 weights: 348 KB.
+[32m[INFO][0m [32mPrompt executed in 134.91 seconds[0m
+[32m[INFO][0m got prompt
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Detected mixed precision quantization
+[32m[INFO][0m Using mixed precision operations
+[32m[INFO][0m Native ops: int8_tensorwise, convrot_w4a4, asym_w4a8_int8 , emulated ops: nvfp4, mxfp8, float8_e5m2, float8_e4m3fn
+[32m[INFO][0m model weight dtype torch.bfloat16, manual cast: torch.bfloat16
+[32m[INFO][0m model_type FLOW_AV
+[MiniMaxH3TurboLoRA] pruned base [merge]: lora=minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors strength=1.0 | 208 backbone modules, 208 weights patched (merged) | model=MiniMaxH3 weight_dtype=torch.bfloat16 weight_dev=cpu
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Using MixedPrecisionOps for text encoder
+[32m[INFO][0m CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[32m[INFO][0m Requested to load MiniMaxH3TEModel_
+[32m[INFO][0m Model MiniMaxH3TEModel_ prepared for dynamic VRAM loading. 25882MB Staged. 0 patches attached. Force pre-loaded 310 weights: 1272 KB.
+[32m[INFO][0m [SelfLift plan] low_latent=(1, 24, 22, 16, 28) target_latent=(1, 24, 22, 30, 54) spatial_lift=(1.8750, 1.9286) low_nfe=3 high_nfe=1 sigma_prediction=0.92307693 sigma_resume=0.80000001 rho=0.0000 weights=(1.0000, 1.0000) direct_lift=external pixel_anchor=False cfg=1.0000 mask=none hires_model=same
+[32m[INFO][0m [SelfLift timing] low_resolution start (wall time; no forced CUDA sync) latent=(16, 28) pixels=(256, 448)
+[32m[INFO][0m Requested to load MiniMaxH3
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+  0%|          | 0/3 [00:00<?, ?it/s]  0%|          | 0/3 [00:00<?, ?it/s,   Model Initializing ...  ][H3TURBO fwd pruned/merge] call#1  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=1000.00  video_rms=1.0033 audio_rms=0.9939 dtype=torch.bfloat16
+[32m[INFO][0m [H3 TST] step 0/3 frames=22 grid_rows=112 pre|T|=0.5191 post|T|=0.4988 mean_gamma=1.0477 active_heads=54% tst_time=1.44s
+[32m[INFO][0m [SelfLift timing] low_resolution step 1/3 (includes setup): 41.495s
+  0%|          | 0/3 [00:38<?, ?it/s,  Model Initialization complete!  ] 33%|███▎      | 1/3 [00:38<01:16, 38.26s/it,  Model Initialization complete!  ][H3TURBO fwd pruned/merge] call#2  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=972.97  video_rms=0.9783 audio_rms=0.9010 dtype=torch.bfloat16
+[32m[INFO][0m [H3 TST] step 1/3 frames=22 grid_rows=112 pre|T|=0.4977 post|T|=0.4877 mean_gamma=1.0181 active_heads=36% tst_time=0.31s
+[32m[INFO][0m [SelfLift timing] low_resolution step 2/3: 11.038s
+ 33%|███▎      | 1/3 [00:22<01:16, 38.26s/it]                                    67%|██████�   | 2/3 [00:22<00:11, 11.04s/it][H3TURBO fwd pruned/merge] call#3  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=923.08  video_rms=0.9327 audio_rms=0.7574 dtype=torch.bfloat16
+[32m[INFO][0m [H3 TST] step 2/3 frames=22 grid_rows=112 pre|T|=0.4963 post|T|=0.4963 mean_gamma=1.0000 active_heads=0% tst_time=0.24s
+[32m[INFO][0m [SelfLift timing] low_resolution step 3/3: 4.789s
+100%|██████████| 3/3 [00:26<00:00,  4.79s/it]100%|██████████| 3/3 [00:26<00:00,  8.96s/it]
+[32m[INFO][0m [SelfLift timing] low_resolution total: 57.325s; after last mark: 0.002s
+[32m[INFO][0m [SelfLift timing] transition start (wall time; no forced CUDA sync) latent=(30, 54) pixels=(480, 864)
+[32m[INFO][0m [SelfLift timing] transition prepare_endpoint: 0.052s
+[32m[INFO][0m [SelfLift upscaler] model=minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors dtype=torch.bfloat16 input=(1, 24, 22, 16, 28) target_hw=(30, 54) spatial_lift=(1.8750, 1.9286) scale_embedding=0.9018 mode=full chunk=32 overlap=0 windows=1 max_input_window=22 budget_window=22 estimated_workspace=278.44 MiB
+[32m[INFO][0m Requested to load LatentResizer3D
+[32m[INFO][0m Model LatentResizer3D prepared for dynamic VRAM loading. 0MB Staged. 0 patches attached. Force pre-loaded 322 weights: 674375 KB.
+[32m[INFO][0m [SelfLift timing] transition paired_lifts: 2.164s
+[32m[INFO][0m [SelfLift timing] transition correction_and_debug: 0.005s
+[32m[INFO][0m [SelfLift timing] transition renoise: 0.661s
+[32m[INFO][0m [SelfLift timing] transition total: 2.882s; after last mark: 0.000s
+[32m[INFO][0m [SelfLift timing] high_resolution start (wall time; no forced CUDA sync) latent=(30, 54) pixels=(480, 864)
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+  0%|          | 0/1 [00:00<?, ?it/s]  0%|          | 0/1 [00:00<?, ?it/s,   Model Initializing ...  ][H3TURBO fwd pruned/merge] call#4  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=800.00  video_rms=0.8256 audio_rms=0.5465 dtype=torch.bfloat16
+[32m[INFO][0m [H3 TST] step 0/1 frames=22 grid_rows=405 pre|T|=0.5017 post|T|=0.4804 mean_gamma=1.0296 active_heads=53% tst_time=0.36s
+[32m[INFO][0m [SelfLift timing] high_resolution step 1/1 (includes setup): 15.470s
+  0%|          | 0/1 [00:14<?, ?it/s,  Model Initialization complete!  ]100%|██████████| 1/1 [00:14<00:00, 14.26s/it,  Model Initialization complete!  ]100%|██████████| 1/1 [00:14<00:00, 14.26s/it,  Model Initialization complete!  ]
+[32m[INFO][0m [SelfLift timing] high_resolution total: 15.644s; after last mark: 0.174s
+[32m[INFO][0m Requested to load MiniMaxH3AudioVAE
+[32m[INFO][0m Model MiniMaxH3AudioVAE prepared for dynamic VRAM loading. 576MB Staged. 0 patches attached. Force pre-loaded 401 weights: 539 KB.
+[32m[INFO][0m Requested to load MiniMaxH3VideoVAE
+[32m[INFO][0m Model MiniMaxH3VideoVAE prepared for dynamic VRAM loading. 4965MB Staged. 0 patches attached. Force pre-loaded 128 weights: 348 KB.
+[32m[INFO][0m [32mPrompt executed in 168.58 seconds[0m
+[32m[INFO][0m got prompt
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Detected mixed precision quantization
+[32m[INFO][0m Using mixed precision operations
+[32m[INFO][0m Native ops: int8_tensorwise, convrot_w4a4, asym_w4a8_int8 , emulated ops: nvfp4, mxfp8, float8_e5m2, float8_e4m3fn
+[32m[INFO][0m model weight dtype torch.bfloat16, manual cast: torch.bfloat16
+[32m[INFO][0m model_type FLOW_AV
+[MiniMaxH3TurboLoRA] pruned base [merge]: lora=minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors strength=1.0 | 208 backbone modules, 208 weights patched (merged) | model=MiniMaxH3 weight_dtype=torch.bfloat16 weight_dev=cpu
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Using MixedPrecisionOps for text encoder
+[32m[INFO][0m CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[32m[INFO][0m Requested to load MiniMaxH3TEModel_
+[32m[INFO][0m Model MiniMaxH3TEModel_ prepared for dynamic VRAM loading. 25882MB Staged. 0 patches attached. Force pre-loaded 310 weights: 1272 KB.
+[32m[INFO][0m [SelfLift plan] low_latent=(1, 24, 22, 16, 28) target_latent=(1, 24, 22, 30, 54) spatial_lift=(1.8750, 1.9286) low_nfe=3 high_nfe=1 sigma_prediction=0.92307693 sigma_resume=0.80000001 rho=0.6000 weights=(1.0000, 1.0000) direct_lift=nearest pixel_anchor=True cfg=1.0000 mask=none hires_model=same
+[32m[INFO][0m [SelfLift timing] low_resolution start (wall time; no forced CUDA sync) latent=(16, 28) pixels=(256, 448)
+[32m[INFO][0m Requested to load MiniMaxH3
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+  0%|          | 0/3 [00:00<?, ?it/s]  0%|          | 0/3 [00:00<?, ?it/s,   Model Initializing ...  ][H3TURBO fwd pruned/merge] call#1  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=1000.00  video_rms=1.0033 audio_rms=0.9939 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 1/3 (includes setup): 28.853s
+  0%|          | 0/3 [00:26<?, ?it/s,  Model Initialization complete!  ] 33%|███▎      | 1/3 [00:26<00:53, 26.52s/it,  Model Initialization complete!  ][H3TURBO fwd pruned/merge] call#2  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=972.97  video_rms=0.9783 audio_rms=0.9007 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 2/3: 5.827s
+ 33%|███▎      | 1/3 [00:11<00:53, 26.52s/it]                                    67%|██████�   | 2/3 [00:11<00:05,  5.83s/it][H3TURBO fwd pruned/merge] call#3  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=923.08  video_rms=0.9327 audio_rms=0.7572 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 3/3: 3.778s
+100%|██████████| 3/3 [00:15<00:00,  3.78s/it]100%|██████████| 3/3 [00:15<00:00,  5.14s/it]
+[32m[INFO][0m [SelfLift timing] low_resolution total: 38.633s; after last mark: 0.175s
+[32m[INFO][0m [SelfLift timing] transition start (wall time; no forced CUDA sync) latent=(30, 54) pixels=(480, 864)
+[32m[INFO][0m [SelfLift timing] transition prepare_endpoint: 0.602s
+[32m[INFO][0m Requested to load MiniMaxH3VideoVAE
+[32m[INFO][0m Model MiniMaxH3VideoVAE prepared for dynamic VRAM loading. 4965MB Staged. 0 patches attached. Force pre-loaded 128 weights: 348 KB.
+[32m[INFO][0m 0 models unloaded.
+[32m[INFO][0m Model MiniMaxH3VideoVAE prepared for dynamic VRAM loading. 4965MB Staged. 0 patches attached. Force pre-loaded 128 weights: 348 KB.
+[32m[INFO][0m [SelfLift timing] transition paired_lifts: 62.474s
+[32m[INFO][0m [SelfLift timing] transition correction_and_debug: 0.399s
+[32m[INFO][0m [SelfLift timing] transition renoise: 0.053s
+[32m[INFO][0m [SelfLift timing] transition total: 63.528s; after last mark: 0.000s
+[32m[INFO][0m [SelfLift timing] high_resolution start (wall time; no forced CUDA sync) latent=(30, 54) pixels=(480, 864)
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+  0%|          | 0/1 [00:00<?, ?it/s]  0%|          | 0/1 [00:00<?, ?it/s,   Model Initializing ...  ][H3TURBO fwd pruned/merge] call#4  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=800.00  video_rms=0.8273 audio_rms=0.5447 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] high_resolution step 1/1 (includes setup): 17.932s
+  0%|          | 0/1 [00:16<?, ?it/s,  Model Initialization complete!  ]100%|██████████| 1/1 [00:16<00:00, 16.12s/it,  Model Initialization complete!  ]100%|██████████| 1/1 [00:16<00:00, 16.13s/it,  Model Initialization complete!  ]
+[32m[INFO][0m [SelfLift timing] high_resolution total: 18.544s; after last mark: 0.612s
+[32m[INFO][0m Requested to load MiniMaxH3AudioVAE
+[32m[INFO][0m Model MiniMaxH3AudioVAE prepared for dynamic VRAM loading. 576MB Staged. 0 patches attached. Force pre-loaded 401 weights: 539 KB.
+[32m[INFO][0m Model MiniMaxH3VideoVAE prepared for dynamic VRAM loading. 4965MB Staged. 0 patches attached. Force pre-loaded 128 weights: 348 KB.
+[32m[INFO][0m [32mPrompt executed in 200.18 seconds[0m
+[32m[INFO][0m got prompt
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Using MixedPrecisionOps for text encoder
+[32m[INFO][0m CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[32m[INFO][0m Requested to load MiniMaxH3TEModel_
+[32m[INFO][0m Model MiniMaxH3TEModel_ prepared for dynamic VRAM loading. 25882MB Staged. 0 patches attached. Force pre-loaded 310 weights: 1272 KB.
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Detected mixed precision quantization
+[32m[INFO][0m Using mixed precision operations
+[32m[INFO][0m Native ops: int8_tensorwise, convrot_w4a4, asym_w4a8_int8 , emulated ops: nvfp4, mxfp8, float8_e5m2, float8_e4m3fn
+[32m[INFO][0m model weight dtype torch.bfloat16, manual cast: torch.bfloat16
+[32m[INFO][0m model_type FLOW_AV
+[MiniMaxH3TurboLoRA] pruned base [merge]: lora=minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors strength=1.0 | 208 backbone modules, 208 weights patched (merged) | model=MiniMaxH3 weight_dtype=torch.bfloat16 weight_dev=cpu
+[32m[INFO][0m Requested to load MiniMaxH3
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+[H3TURBO sampler] native ModelSamplingAV -> single-schedule Euler  sigmas=[1.0, 0.9882, 0.973, 0.9524, 0.9231, 0.878, 0.8, 0.6316, 0.0]  x.shape=(1, 1, 863168) dtype=torch.float32
+  0%|          | 0/8 [00:00<?, ?it/s][H3TURBO fwd pruned/merge] call#1  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=1000.00  video_rms=1.0005 audio_rms=0.9967 dtype=torch.bfloat16
+[H3TURBO step 0] sv=1.0000->0.9882  denoised_rms=1.5098 x_rms=0.9890 d_rms=1.8052
+ 12%|█▎        | 1/8 [00:26<03:08, 26.94s/it][H3TURBO fwd pruned/merge] call#2  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=988.24  video_rms=0.9890 audio_rms=0.9529 dtype=torch.bfloat16
+[H3TURBO step 1] sv=0.9882->0.9730  denoised_rms=1.0658 x_rms=0.9743 d_rms=1.4516
+ 25%|██�       | 2/8 [00:38<01:47, 17.84s/it][H3TURBO fwd pruned/merge] call#3  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=972.97  video_rms=0.9743 audio_rms=0.9040 dtype=torch.bfloat16
+[H3TURBO step 2] sv=0.9730->0.9524  denoised_rms=1.0686 x_rms=0.9550 d_rms=1.4532
+ 38%|███▊      | 3/8 [00:49<01:13, 14.72s/it][H3TURBO fwd pruned/merge] call#4  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=952.38  video_rms=0.9549 audio_rms=0.8414 dtype=torch.bfloat16
+[H3TURBO step 3] sv=0.9524->0.9231  denoised_rms=1.0291 x_rms=0.9283 d_rms=1.4218
+ 50%|████�     | 4/8 [01:00<00:52, 13.25s/it][H3TURBO fwd pruned/merge] call#5  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=923.08  video_rms=0.9282 audio_rms=0.7653 dtype=torch.bfloat16
+[H3TURBO step 4] sv=0.9231->0.8780  denoised_rms=1.0100 x_rms=0.8896 d_rms=1.4053
+ 62%|██████�   | 5/8 [01:11<00:37, 12.44s/it][H3TURBO fwd pruned/merge] call#6  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=878.05  video_rms=0.8894 audio_rms=0.6694 dtype=torch.bfloat16
+[H3TURBO step 5] sv=0.8780->0.8000  denoised_rms=1.0049 x_rms=0.8300 d_rms=1.3970
+ 75%|███████▌  | 6/8 [01:22<00:23, 11.95s/it][H3TURBO step 6] sv=0.8000->0.6316  denoised_rms=1.0077 x_rms=0.7429 d_rms=1.3912
+ 88%|████████� | 7/8 [01:33<00:11, 11.64s/it][H3TURBO step 7] sv=0.6316->0.0000  denoised_rms=1.0220 x_rms=1.0220 d_rms=1.3862
+100%|██████████| 8/8 [01:44<00:00, 11.43s/it]100%|██████████| 8/8 [01:44<00:00, 13.05s/it]
+[32m[INFO][0m Requested to load MiniMaxH3AudioVAE
+[32m[INFO][0m Model MiniMaxH3AudioVAE prepared for dynamic VRAM loading. 576MB Staged. 0 patches attached. Force pre-loaded 401 weights: 539 KB.
+[32m[INFO][0m Requested to load MiniMaxH3VideoVAE
+[32m[INFO][0m Model MiniMaxH3VideoVAE prepared for dynamic VRAM loading. 4965MB Staged. 0 patches attached. Force pre-loaded 128 weights: 348 KB.
+[32m[INFO][0m [32mPrompt executed in 180.99 seconds[0m
+[32m[INFO][0m got prompt
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Detected mixed precision quantization
+[32m[INFO][0m Using mixed precision operations
+[32m[INFO][0m Native ops: int8_tensorwise, convrot_w4a4, asym_w4a8_int8 , emulated ops: nvfp4, mxfp8, float8_e5m2, float8_e4m3fn
+[32m[INFO][0m model weight dtype torch.bfloat16, manual cast: torch.bfloat16
+[32m[INFO][0m model_type FLOW_AV
+[MiniMaxH3TurboLoRA] pruned base [merge]: lora=minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors strength=1.0 | 208 backbone modules, 208 weights patched (merged) | model=MiniMaxH3 weight_dtype=torch.bfloat16 weight_dev=cpu
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Using MixedPrecisionOps for text encoder
+[32m[INFO][0m CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[32m[INFO][0m Requested to load MiniMaxH3TEModel_
+[32m[INFO][0m Model MiniMaxH3TEModel_ prepared for dynamic VRAM loading. 25882MB Staged. 0 patches attached. Force pre-loaded 310 weights: 1272 KB.
+[32m[INFO][0m [SelfLift plan] low_latent=(1, 24, 22, 16, 28) target_latent=(1, 24, 22, 30, 54) spatial_lift=(1.8750, 1.9286) low_nfe=6 high_nfe=2 sigma_prediction=0.87804878 sigma_resume=0.80000001 rho=0.0000 weights=(1.0000, 1.0000) direct_lift=external pixel_anchor=False cfg=1.0000 mask=none hires_model=same
+[32m[INFO][0m [SelfLift timing] low_resolution start (wall time; no forced CUDA sync) latent=(16, 28) pixels=(256, 448)
+[32m[INFO][0m Requested to load MiniMaxH3
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+  0%|          | 0/6 [00:00<?, ?it/s]  0%|          | 0/6 [00:00<?, ?it/s,   Model Initializing ...  ][H3TURBO fwd pruned/merge] call#1  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=1000.00  video_rms=1.0033 audio_rms=0.9939 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 1/6 (includes setup): 34.467s
+  0%|          | 0/6 [00:31<?, ?it/s,  Model Initialization complete!  ] 17%|█▋        | 1/6 [00:31<02:35, 31.20s/it,  Model Initialization complete!  ][H3TURBO fwd pruned/merge] call#2  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=988.24  video_rms=0.9919 audio_rms=0.9508 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 2/6: 7.369s
+ 17%|█▋        | 1/6 [00:14<02:35, 31.20s/it]                                    33%|███▎      | 2/6 [00:14<00:29,  7.37s/it][H3TURBO fwd pruned/merge] call#3  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=972.97  video_rms=0.9773 audio_rms=0.9011 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 3/6: 4.134s
+ 50%|████�     | 3/6 [00:18<00:12,  4.13s/it][H3TURBO fwd pruned/merge] call#4  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=952.38  video_rms=0.9580 audio_rms=0.8381 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 4/6: 4.072s
+ 67%|██████�   | 4/6 [00:22<00:08,  4.07s/it][H3TURBO fwd pruned/merge] call#5  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=923.08  video_rms=0.9317 audio_rms=0.7625 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 5/6: 3.958s
+ 83%|████████� | 5/6 [00:26<00:03,  3.96s/it][H3TURBO fwd pruned/merge] call#6  qkv_proj.forward_owner=Linear weight_patched=True (merge: delta folded into weights; owner is the base Linear, patch presence => lora ACTIVE)  is_injected=False  timestep=878.05  video_rms=0.8935 audio_rms=0.6674 dtype=torch.bfloat16
+[32m[INFO][0m [SelfLift timing] low_resolution step 6/6: 3.991s
+100%|██████████| 6/6 [00:30<00:00,  3.99s/it]100%|██████████| 6/6 [00:30<00:00,  5.15s/it]
+[32m[INFO][0m [SelfLift timing] low_resolution total: 58.102s; after last mark: 0.110s
+[32m[INFO][0m [SelfLift timing] transition start (wall time; no forced CUDA sync) latent=(30, 54) pixels=(480, 864)
+[32m[INFO][0m [SelfLift timing] transition prepare_endpoint: 0.730s
+[32m[INFO][0m [SelfLift upscaler] model=minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors dtype=torch.bfloat16 input=(1, 24, 22, 16, 28) target_hw=(30, 54) spatial_lift=(1.8750, 1.9286) scale_embedding=0.9018 mode=full chunk=32 overlap=0 windows=1 max_input_window=22 budget_window=22 estimated_workspace=278.44 MiB
+[32m[INFO][0m Requested to load LatentResizer3D
+[32m[INFO][0m Model LatentResizer3D prepared for dynamic VRAM loading. 0MB Staged. 0 patches attached. Force pre-loaded 322 weights: 674375 KB.
+[32m[INFO][0m [SelfLift timing] transition paired_lifts: 4.469s
+[32m[INFO][0m [SelfLift timing] transition correction_and_debug: 0.005s
+[32m[INFO][0m [SelfLift timing] transition renoise: 0.029s
+[32m[INFO][0m [SelfLift timing] transition total: 5.233s; after last mark: 0.000s
+[32m[INFO][0m [SelfLift timing] high_resolution start (wall time; no forced CUDA sync) latent=(30, 54) pixels=(480, 864)
+[32m[INFO][0m Model MiniMaxH3 prepared for dynamic VRAM loading. 14390MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+  0%|          | 0/2 [00:00<?, ?it/s]  0%|          | 0/2 [00:00<?, ?it/s,   Model Initializing ...  ][32m[INFO][0m [SelfLift timing] high_resolution step 1/2 (includes setup): 12.408s
+  0%|          | 0/2 [00:11<?, ?it/s,  Model Initialization complete!  ] 50%|████�     | 1/2 [00:11<00:11, 11.58s/it,  Model Initialization complete!  ][32m[INFO][0m [SelfLift timing] high_resolution step 2/2: 11.240s
+ 50%|████�     | 1/2 [00:22<00:11, 11.58s/it]                                   100%|██████████| 2/2 [00:22<00:00, 11.27s/it]100%|██████████| 2/2 [00:22<00:00, 11.27s/it]
+[32m[INFO][0m [SelfLift timing] high_resolution total: 25.587s; after last mark: 1.939s
+[32m[INFO][0m Requested to load MiniMaxH3AudioVAE
+[32m[INFO][0m Model MiniMaxH3AudioVAE prepared for dynamic VRAM loading. 576MB Staged. 0 patches attached. Force pre-loaded 401 weights: 539 KB.
+[32m[INFO][0m Requested to load MiniMaxH3VideoVAE
+[32m[INFO][0m Model MiniMaxH3VideoVAE prepared for dynamic VRAM loading. 4965MB Staged. 0 patches attached. Force pre-loaded 128 weights: 348 KB.
+[32m[INFO][0m [32mPrompt executed in 174.15 seconds[0m
